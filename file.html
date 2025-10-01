@@ -2,7 +2,7 @@
 <html>
 <h1>SELECT TEMPLATE</h1><br>
   <table>
-  <tr><td><button onclick=update("canva-bTzmKJ04VgU.jpg")><img src="canva-bTzmKJ04VgU.jpg" height=200, width=200></button></td><td></td><button onclick=update2("canva-4nLlE9Xt0Rk.jpg")><img src="canva-4nLlE9Xt0Rk.jpg" height=200, width=200></button></td><td><button onclick=update()><img> src="</td></tr>
+  <tr><td><button onclick=update("canva-bTzmKJ04VgU.jpg")><img src="canva-bTzmKJ04VgU.jpg" height=200, width=200></button></td><td></td><button onclick=update("canva-4nLlE9Xt0Rk.jpg")><img src="canva-4nLlE9Xt0Rk.jpg" height=200, width=200></button></td><td><button onclick=update()><img> src="</td></tr>
 div id="editor">
   <h2>Edit Certificate</h2>
   <div id="certificate">
@@ -24,13 +24,9 @@ div id="editor">
 </div>
 
 <script>
-  function update1(src) {
-    document.getElementById("canva-bTzmKJ04VgU.jpg").src = src;
-    document.getElementById("editor").style.display = "block";
-  }
 
-  function update2(src){
-     document.getElementById("canva-4nLlE9Xt0Rk.jpg").src = src;
+  function update(src){
+     document.getElementById("cert-img"").src = src;
      document.getElementById("editor").style.display = "block";
   }
 
