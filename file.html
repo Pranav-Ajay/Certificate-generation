@@ -3,36 +3,15 @@
 <h1>SELECT TEMPLATE</h1><br>
   <table>
   <tr><td><button onclick=update("canva-bTzmKJ04VgU.jpg")><img src="canva-bTzmKJ04VgU.jpg" height=200, width=200></button></td><td></td><button onclick=update("canva-4nLlE9Xt0Rk.jpg")><img src="canva-4nLlE9Xt0Rk.jpg" height=200, width=200></button></td><td><button onclick=update()><img> src="</td></tr>
-div id="editor">
-  <h2>Edit Certificate</h2>
-  <div id="certificate">
-    <img id="cert-img" src="">
-    <div id="name" class="textbox"></div>
-    <div id="course" class="textbox"></div>
-    <div id="date" class="textbox"></div>
-  </div>
+<h2>Editable Certificate</h2>
 
-  <br><br>
-  <label>Name: </label>
-  <input type="text" oninput="updateText('name', this.value)"><br><br>
+<div class="certificate">
+  <img src="canva-bTzmKJ04VgU.jpg" alt="Certificate">
 
-  <label>Course/Reason: </label>
-  <input type="text" oninput="updateText('course', this.value)"><br><br>
-
-  <label>Date: </label>
-  <input type="text" oninput="updateText('date', this.value)">
+  <div id="name" class="editable" contenteditable="true">Enter Name</div>
+  <div id="course" class="editable" contenteditable="true">Enter Course</div>
+  <div id="date" class="editable" contenteditable="true">Enter Date</div>
 </div>
 
-<script>
-
-  function update(src){
-     document.getElementById("cert-img"").src = src;
-     document.getElementById("editor").style.display = "block";
-  }
-
-  function updateText(id, value) {
-    document.getElementById(id).innerText = value;
-  }
-</script>
 
 </html>
